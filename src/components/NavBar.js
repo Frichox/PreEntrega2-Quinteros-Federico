@@ -1,35 +1,26 @@
-import react from 'react';
-import '../App.css'; 
-import CartWidget from './CardWidget';
 
-export const NavBar = () => {
+import Categorias from './Categorias';
+import CartWidget from './CardWidget';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+
     return (
-        <div>
-            <nav className='nav'>
-                <div>
-                    <a className='Nav-logo'>BUHO MATES</a>
-                </div>
-                <div>
-                <ul className='nav-list'>
-                    <li>
-                        <a className='nav-link'>Productos</a>
-                    </li>
-                    <li>
-                        <a className='nav-link'>Recomendaciones</a>
-                    </li>
-                    <li>
-                        <a className='nav-link'>Contacto</a>
-                    </li>
-                    <li>
-                        <a className='nav-link'>
-                            <CartWidget/>0
-                        </a>
-                    </li>
-                </ul>
-                </div>
-            </nav>
+
+      <nav className='navbar navbar-expand-lg'>
+         <div class="container-fluid">
+            <Link class="navbar-brand" to={"/"}>BUHO MATES</Link>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <Categorias/>
+              <CartWidget/>
         </div>
+      </div>
+    </nav>
+
     );
 }
 
-export default NavBar;
+export default Navbar;
