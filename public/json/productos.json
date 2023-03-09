@@ -2,7 +2,7 @@
     {
         "id": 1,
         "idCategoria": 1,
-        "nombre": "Mate Imperial Premiun",
+        "nombre": "Mate Imperial Premium",
         "precio": 25000,
         "stock": 30,
         "img": "mateimperialpremiun.jpg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "idCategoria": 1,
-        "nombre": "Mate Imperial Rustico",
+        "nombre": "Mate Imperial Rústico",
         "precio": 20000,
         "stock": 20,
         "img": "mateimperialrustico.jpg"

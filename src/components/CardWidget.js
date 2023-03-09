@@ -6,8 +6,8 @@ export const CartWidget = () => {
         <>
                 
                 <button className="btn btn-secondary cartWidget">
-                <i className="bi bi-cart4"></i>
-                <span className="cantCarrito">0</span>
+                    <i className="fas fa-shopping-cart fa-lg"></i>
+                        <span className="cantCarrito">0</span>
                 </button>
 
             </> 
